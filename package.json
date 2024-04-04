@@ -1,6 +1,6 @@
 {
 	"name": "@leetnotion/notion-api",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Notion API with extra functionalities",
 	"type": "module",
 	"types": "lib/index.d.ts",
@@ -55,7 +55,7 @@
 	"bugs": {
 		"url": "https://github.com/codewithsathya/notion-api/issues"
 	},
-	"homepage": "https://jacoblincool.github.io/LeetCode-Query/",
+	"homepage": "https://github.com/codewithsathya/notion-api/",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/codewithsathya/notion-api"
