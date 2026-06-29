@@ -1,6 +1,6 @@
 {
 	"name": "@leetnotion/notion-api",
-	"version": "0.0.2",
+	"version": "1.0.0",
 	"description": "Notion API with extra functionalities",
 	"type": "module",
 	"types": "lib/index.d.ts",
