@@ -15,7 +15,7 @@ export class AdvancedNotionClient extends Client {
 	public async getDatabaseId(databaseName: string): Promise<string | null> {
 		const { results } = await this.search({ query: databaseName });
 		let databaseResults = results.filter((item) => {
-			return item.object === 'database';
+			return item.object === 'data_source';
 		}) as { object: string; id: string; title: { plain_text: string }[] }[];
 
 		databaseResults = databaseResults.filter((item) => {
@@ -36,8 +36,8 @@ export class AdvancedNotionClient extends Client {
 		const pages: PageObjectResponse[] = [];
 		do {
 			const response = (await this.limiter.schedule(() =>
-				this.databases.query({
-					database_id: databaseId,
+				this.dataSources.query({
+					data_source_id: databaseId,
 					start_cursor: startCursor,
 				}),
 			)) as QueryDatabaseResponse;

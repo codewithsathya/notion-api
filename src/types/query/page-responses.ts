@@ -6,9 +6,8 @@ export type QueryDatabaseResponse = {
 	results: Array<PageObjectResponse>;
 	next_cursor: string | null;
 	has_more: boolean;
-	type: 'page_or_database';
-	page_or_database: Record<string, never>;
-	request_id: string;
+	type: 'page_or_data_source';
+	page_or_data_source: Record<string, never>;
 };
 
 export type PageObjectResponse<T = void> = {
